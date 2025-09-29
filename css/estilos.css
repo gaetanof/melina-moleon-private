@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li+li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero: solo foto */
+#hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  margin-top: 0;
+}
+
+/* Intro */
+#intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#intro h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Works */
+#works {
+  text-align: left;
+}
+
+#works h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#works p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+#works .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#works .card.photo {
+  flex: 1;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+#works .card.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* General cards */
+.card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4b5cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #3a49cc;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row .card+.card {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li+li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

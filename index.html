@@ -2,68 +2,89 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hot Air Balloons in Turkey</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cappadocia Balloon Tours</title>
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 
 <body>
 
   <header>
-    <nav>
-      <h1>Hot Air Balloons</h1>
+    <nav class="container">
+      <h2 class="site-title">Cappadocia Balloon Tours</h2>
       <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#works">Works</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#extra">Extras</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
+    <!-- Hero: solo la foto, sin texto -->
     <section id="hero">
-      <h2>Discover Turkey from the Sky</h2>
-      <p><strong>Unique experiences</strong> and <em>memorable adventures</em> in Cappadocia.</p>
       <img src="img/hero.jpg" alt="Hot air balloons flying over Cappadocia">
     </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="row">
-        <div class="card">
-          <img src="img/service1.jpg" alt="Hot air balloon ride">
-          <p>Balloon tour at sunrise over Cappadocia.</p>
-        </div>
-        <div class="card">
-          <img src="img/service2.jpg" alt="Istanbul cultural tour">
-          <p>Cultural tour in Istanbul visiting iconic landmarks.</p>
-        </div>
-        <div class="card">
-          <img src="img/service3.jpg" alt="Turkish food experience">
-          <p>Enjoy authentic Turkish food and traditional markets.</p>
-        </div>
-      </div>
+    <!-- Sección principal con H1 -->
+    <section id="intro">
+      <h1>Discover Cappadocia from the Sky</h1>
+      <p><em>Magical balloon rides</em> and <strong>unique landscapes</strong> you will never forget.</p>
     </section>
 
+    <!-- Works con 6 fotos -->
     <section id="works">
-      <h2>Our Works</h2>
+      <h2>Highlights</h2>
+      <p><em>Let me show you the most iconic places in Turkey</em></p>
+      <p>From the white travertine terraces of Pamukkale to the historic Hagia Sophia and the vibrant Grand Bazaar,
+        explore Turkey’s wonders beyond Cappadocia’s skies.</p>
+
+      <div class="row works-row">
+        <div class="card photo"><img src="img/work1.jpg" alt="Pamukkale terraces"></div>
+        <div class="card photo"><img src="img/work2.jpg" alt="Hagia Sophia"></div>
+        <div class="card photo"><img src="img/work3.jpg" alt="Grand Bazaar"></div>
+      </div>
+      <div class="row works-row">
+        <div class="card photo"><img src="img/service1.jpg" alt="Hot air balloon ride"></div>
+        <div class="card photo"><img src="img/service2.jpg" alt="Istanbul cultural tour"></div>
+        <div class="card photo"><img src="img/service3.jpg" alt="Turkish food experience"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
       <div class="row">
         <div class="card">
-          <img src="img/work1.jpg" alt="Pamukkale terraces">
-          <p>Pamukkale thermal pools in Turkey.</p>
+          <h2>The Cappadocia Experience</h2>
+          <p>Flying over the valleys and fairy chimneys at dawn is the most unforgettable part of Cappadocia.</p>
+          <a href="mailto:contact@hotairtrips.com" class="btn">Book Your Flight</a>
         </div>
         <div class="card">
-          <img src="img/work2.jpg" alt="Hagia Sophia">
-          <p>Hagia Sophia, one of Istanbul’s most iconic sites.</p>
-        </div>
-        <div class="card">
-          <img src="img/work3.jpg" alt="Grand Bazaar">
-          <p>Grand Bazaar, colors and traditions of Turkey.</p>
+          <img src="img/contact.jpg" alt="Map of Cappadocia with balloons">
         </div>
       </div>
     </section>
 
+    <!-- Extra -->
+    <section id="extra">
+      <div class="row">
+        <div class="card">
+          <h2>More to Explore</h2>
+          <p>Extend your adventure with unique experiences in Turkey.</p>
+        </div>
+        <div class="card">
+          <h3>Evening Tours</h3>
+          <p>Discover Cappadocia under the stars with guided night walks.</p>
+        </div>
+        <div class="card">
+          <h3>24/7 Support</h3>
+          <p>Our team is always available to assist you during your trip.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <p>Email us at <a href="mailto:contact@hotairtrips.com">contact@hotairtrips.com</a></p>
@@ -72,7 +93,9 @@
   </main>
 
   <footer>
-    <p>© 2025 Hot Air Balloons in Turkey</p>
+    <div class="container">
+      <p>© 2025 Cappadocia Balloon Tours</p>
+    </div>
   </footer>
 
 </body>
